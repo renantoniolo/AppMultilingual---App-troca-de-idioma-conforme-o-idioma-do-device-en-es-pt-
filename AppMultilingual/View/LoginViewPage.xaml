@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="AppMultilingual.LoginViewPage"
+    xmlns:i18n="clr-namespace:AppMultilingual.Helpers"
+    Title="{i18n:Translate Welcome}">
+	<ContentPage.Content>
+        <StackLayout Padding="10">
+            
+            <Label 
+                Text="{i18n:Translate Login}" 
+                TextColor="#000" 
+                HorizontalTextAlignment="Center" />
+
+            <Entry 
+                Margin="10" 
+                Text="" 
+                Placeholder="{i18n:Translate E-mail}" />
+
+            <Button 
+                Margin="10"
+                Text="{i18n:Translate OK}"
+                TextColor="#000" />
+
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
